@@ -105,10 +105,3 @@ SELECT EmpFname, EmpLname, Count (*)
 FROM sweta_EmployeeInfo
 GROUP BY EmpFname, EmpLname;
 
-
-SELECT Salary
-FROM (
-  SELECT Salary, RANK() OVER (ORDER BY Salary DESC) AS salary_rank
-  FROM sweta_EmpPosition
-)
-WHERE salary_rank = 3;
