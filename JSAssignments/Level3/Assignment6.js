@@ -5,3 +5,9 @@ function foo() {
 }
 foo();
 console.log(x);
+
+
+//Output :
+//2
+//2
+//Cause x is a global variable
